@@ -1,0 +1,32 @@
+{
+  "name": "angular-netlify",
+  "version": "1.0.0",
+  "description": "Boilerplate for Angular + Node.js project prepared for netlify",
+  "main": "functions/server.js",
+  "scripts": {
+    "build": "cd theme-customization && npm install && ng build --prod && cd ../ && netlify-lambda build express",
+    "start": "nodemon server.js"
+  },
+  "author": "Orly Knop",
+  "repository": {
+    "url": "https://github.com/orlyohreally/angular-node.js-netlify-boilerplate"
+  },
+  "keywords": [
+    "netlify",
+    "angular",
+    "express.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/orlyohreally/angular-node.js-netlify-boilerplate/issues"
+  },
+  "homepage": "https://github.com/orlyohreally/angular-node.js-netlify-boilerplate#readme",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/cli": "~10.0.0",
+    "express": "^4.17.1",
+    "netlify-lambda": "^2.0.1",
+    "nodemon": "^2.0.4",
+    "serverless-http": "^2.5.0",
+    "body-parser": "^1.19.0"
+  }
+}
